@@ -1,0 +1,13 @@
+.layout {
+    display: none;
+}
+.layout.selected {
+    display: block;
+}
+
+.contentElement {
+    display: none;
+}
+.contentElement.selected {
+    display: block;
+}

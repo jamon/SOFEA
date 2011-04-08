@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'AppleChancery';
+    src: url('apple_chancery-webfont.eot');
+    src: local('‚ò∫'), url('apple_chancery-webfont.woff') format('woff'), url('apple_chancery-webfont.ttf') format('truetype'), url('apple_chancery-webfont.svg#webfontsBBe7Rno') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    overflow: scroll;
+    margin: 0;
+    padding 0;
+    color: #555;
+    font-family: Georgia, Serif;
+    font-size: 14px;
+    background-color: #eee;
+}
+a:active, a:hover, a {
+  outline: none;
+}
+.footer {
+    display: block;
+    height: 120px;
+    background: #000;
+    text-align: center;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.footer .center {
+    position: absolute;
+    margin-left: -400px;
+    left: 50%;
+    width: 800px;
+}
+.footer ul {
+    list-style-type: none;
+    display: block;
+    width: auto;
+    clear: both;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+}
+.footer ul li {
+    display: inline-block;
+    margin-top: 3px;
+    padding-right: 12px;
+    border-left: 1px solid #fff;
+    padding-left: 12px;
+}
+.footer ul li:first-child {
+    border: 0;
+    margin-left: 0;
+}
+.footer ul li a {
+    font-size: 12px;
+    color: #eee;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+.footer .copyright {
+    margin-top: 12px;
+    font-size: 11px;
+    color: #aaa;
+    font-variant: small-caps;
+    text-decoration: none;
+    padding: 0 6px 6px 6px;
+}
+.clear {
+    clear: both;
+}
+.menu {
+    height: 52px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.menu .stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #555;
+}
+.menu .center {
+    position: absolute;
+    margin-left: -400px;
+    left: 50%;
+    width: 800px;
+}
+.menu ul {
+    zbackground-color: #555;
+    zheight: 20px;
+    list-style-type: none;
+    padding: 6px;
+    margin: 0;
+    display: block;
+}
+.menu ul li {
+    float: left;
+    zpadding-right: 12px;
+    border-left: 1px solid #eee;
+    zpadding-left: 12px;
+    height: 46px;
+}
+.menu ul li:hover {
+    background-color: #777;
+}
+.menu ul li:first-child {
+    border: 0;
+    margin-left: 0;
+}
+.menu ul li a {
+    font-size: 12px;
+    color: #eee;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: none;
+    height: 46px;
+    display: block;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.menu .logo {
+    font-family: AppleChancery, cursive;
+    float: right;
+    background-color: #777;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    margin: 10px 10px 0 0;
+    padding: 6px;
+    display: block;
+}
+.contentArea {
+    float: left;
+    width: 100%;
+}
+.contentArea .center {
+    width: 800px;
+    background-color: #fff;
+    padding: 12px;
+    text-align: left;
+}
+h1, h2, h3, h4 {
+    margin: 0.6em 0 0.3em 0;
+    padding 0;
+    border-bottom: 1px dotted;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.2em; }
+.benefits {
+    clear: both;
+    width: 100%;
+    padding: 16px 0;
+}
+.benefit {
+    width: 49%;
+    float: left;
+}
+.benefit img {
+    float: left;
+    padding: 3px;
+    margin-right: 12px;
+}
+.benefit a {
+    color: #222;
+    font-weight: bold;
+    font-size: 0.8em;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+.benefit a:hover {
+    text-decoration: underline;
+}
+.benefit .benefitBody {
+    float: left;
+    width: 60%;
+}
+
+.benefit .learnMore {
+    display: block;
+    padding-top: 1em;
+}
+.benefitImage {
+    display: block;
+    float: left;
+    width: 128px;
+    height: 128px;
+    background-image: url("../images/sprites.jpg");
+}
+.benefitImage.roi { background-position: 0px 0px; }
+.benefitImage.time { background-position: -128px -0px; }
+.benefitImage.integration { background-position: -256px 0px; }
+.benefitImage.experience { background-position: -384px 0px; }
+
+.benefitImage.skills { background-position: 0px -128px; }
+.benefitImage.cost { background-position: -128px -128px; }
+.benefitImage.capabilities { background-position: -256px -128px; }
+
+.image {
+    font-size: 0.8em;
+    color: #777;
+    padding: 6px;
+    float: left;
+    border: 1px solid #777;
+    text-align: center;
+    width: auto;
+    margin: 12px;
+}
+.image img {
+    display: inline-block;
+}
+.panel {
+    display: none;
+}
+.panel.selected {
+    display: block;
+}
+#traditionalChart {
+    height: 200px;
+}

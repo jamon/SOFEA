@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'AppleChancery';
+    src: url('apple_chancery-webfont.eot');
+    src: local('‚ò∫'), url('apple_chancery-webfont.woff') format('woff'), url('apple_chancery-webfont.ttf') format('truetype'), url('apple_chancery-webfont.svg#webfontsBBe7Rno') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding 0;
+    color: #555;
+    font-family: Georgia, Serif;
+    font-size: 14px;
+    background-color: #eee;
+}
+.footer {
+    display: block;
+    min-height: 60px;
+    background: #000;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer ul {
+    list-style-type: none;
+    display: block;
+    width: auto;
+    clear: both;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+}
+.footer ul li {
+    display: inline-block;
+    margin-top: 3px;
+    padding-right: 12px;
+    border-left: 1px solid #fff;
+    padding-left: 12px;
+}
+.footer ul li:first-child {
+    border: 0;
+    margin-left: 0;
+}
+.footer ul li a {
+    font-size: 12px;
+    color: #eee;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+.footer .copyright {
+    margin-top: 12px;
+    font-size: 11px;
+    color: #aaa;
+    font-variant: small-caps;
+    text-decoration: none;
+    padding: 0 6px 6px 6px;
+}
+.clear {
+    clear: both;
+}
+.menu {
+    height: 40px;
+}
+.menu .center {
+    position: absolute;
+    margin-left: -400px;
+    left: 50%;
+}
+.menu ul {
+    background-color: #555;
+    height: 20px;
+    list-style-type: none;
+    padding: 6px;
+    margin: 0;
+    display: block;
+}
+.menu ul li {
+    float: left;
+    padding-right: 12px;
+    border-left: 1px solid #fff;
+    padding-left: 12px;
+    height: 40px;
+}
+.menu ul li:hover {
+    background-color: #777;
+}
+.menu ul li:first-child {
+    border: 0;
+    margin-left: 0;
+}
+.menu ul li a {
+    font-size: 12px;
+    color: #eee;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+.menu .logo {
+    font-family: AppleChancery, cursive;
+    float: right;
+    background-color: #777;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    margin: 10px 10px 0 0;
+    padding: 6px;
+    display: block;
+}
+.contentArea {
+    margin: 0 6px 0 6px;
+    width: 800px;
+    background-color: #fff;
+    padding: 12px;
+    position: absolute;
+    margin-left: -400px;
+    left: 50%;
+}
+h1, h2, h3, h4 {
+    margin: 0.6em 0 0.3em 0;
+    padding 0;
+    border-bottom: 1px dotted;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.2em; }
+
+.image {
+    font-size: 0.8em;
+    color: #777;
+    padding: 6px;
+    display: table-cell;
+    border: 1px solid #777;
+    text-align: center;
+    width: auto;
+}
+.image img {
+    display: inline-block;
+}

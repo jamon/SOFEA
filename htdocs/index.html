@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/sofea.css" />
+        <script type="text/javascript" src="lib/require-jquery.js"></script>
+        <script type="text/javascript">
+            require({baseUrl: "js/"});
+            $(function() {
+                require(["ydmf"], function(ydmf) {
+                    ydmf.Mvc.getInstance().start("sofea/controller/");
+                });
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

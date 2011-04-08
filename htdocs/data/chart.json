@@ -1,0 +1,8 @@
+{
+    "title": "get /index.html",
+    "height": "!00%",
+    "children": [
+        {"title": "select foo", "height": "50%"},
+        {"title": "select bar", "height": "50%"}
+    ]
+}

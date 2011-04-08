@@ -1,0 +1,138 @@
+{namespace sofea.view.index}
+
+/**
+ * Main Page Template
+ */
+{template .Main}
+    <p><strong>Welcome to sofea.net.</strong></p>
+
+    <p>This site is dedicated to helping developers re-think the way web applications are built.</p>
+
+    <p>The web has changed a lot since it was first created.  Don't you think it's about time we start writing web applications differently?  Traditionally, the web server has aggregated data from backend sources, put this into an HTML document, and sent it to the browser.  The browser would then parse the whole HTML document and allow the user to click on links.  When the user clicks a link, the server retrieves all the data for the new link, including a lot of the same data, and generates a whole new document, containing mostly the same content as the last, which is again sent over the wire back to the browser.  The browser then starts over from scratch and re-renders the whole document.</p>
+
+    <p>It's time we stop treating the browser as a document renderer, and start treating it as the application platform that it is.  Using a combination of techniques that have been available for over a decade, we can build applications that run in the browser, using the same technologies and techniques used today.  By doing this, we can reduce server load, network load, and client load, allowing for a faster, more scalable web application with a much better user experience.</p>
+
+    <p>SOFEA (Service Oriented Front End Architecture) exposes your application's functionality via web services which are easily consumable by a browser.  By doing this, you are free to create native user interfaces for multiple platforms and integrate into third party applications without having to maintain a separate API stack.  You can then build your web application to consume those web services directly, giving you a consolidated backend across all your user interfaces.
+    {call .Benefits}{/call}
+{/template}
+
+/**
+ * Benefits
+ */
+{template .Benefits}
+    <div class="benefits">
+        <h1>Benefits</h1>
+        {call .Benefit}
+            {param spriteClass}experience{/param}
+            {param alt}Enhanced User Experience{/param}
+            {param title}Enhanced User Experience{/param}
+            {param text}By focusing on the user's action, and only loading additional content necessary to fulfilling their request, we're able to make a faster, less distracting web application.<a class="learnMore" href="#/benefits/enhanced-user-experience">Learn more.</a>{/param}
+        {/call}
+        {call .Benefit}
+            {param spriteClass}roi{/param}
+            {param alt}Return on Investment{/param}
+            {param title}Return On Investment{/param}
+            {param text}Write your application functionality once as services, re-use them across multiple user interfaces.<a class="learnMore" href="#/benefits/return-on-investment">Learn more.</a>{/param}
+        {/call}
+        <div class="clear"></div>
+        {call .Benefit}
+            {param spriteClass}time{/param}
+            {param alt}Shorter Time to Market{/param}
+            {param title}Shorter Time to Market{/param}
+            {param text}UI and Services can be developed in parallel.  Do more with less code.<a class="learnMore" href="#/benefits/shorter-time-to-market">Learn more.</a>{/param}
+        {/call}
+        {call .Benefit}
+            {param spriteClass}cost{/param}
+            {param alt}Reduced Infrastructure Cost{/param}
+            {param title}Reduced Infrastructure Cost{/param}
+            {param text}Shift work from server to client.  Cloud friendly architecture allows greater horizontal scalability on commodity hardware.<a class="learnMore" href="#/benefits/reduced-infrastructure-cost">Learn more.</a>{/param}
+        {/call}
+        <div class="clear"></div>
+        {call .Benefit}
+            {param spriteClass}skills{/param}
+            {param alt}Skillset Consolidation{/param}
+            {param title}Skillset Consolidation{/param}
+            {param text}UI Developers only need to know Javascript, HTML, and CSS. <a class="learnMore" href="#/benefits/skillset-consolidation">Learn more.</a>{/param}
+        {/call}
+        {call .Benefit}
+            {param spriteClass}integration{/param}
+            {param alt}Migration and Integration{/param}
+            {param title}Ease of Migration and Integration{/param}
+            {param text}Integrate seemlessly with any web technology stack in any language<a class="learnMore" href="#/benefits/migration-and-integration">Learn more.</a>{/param}
+        {/call}
+        <div class="clear"></div>
+        {call .Benefit}
+            {param spriteClass}capabilities{/param}
+            {param alt}Capabilities Enhancement{/param}
+            {param title}Capabilities Enhancement{/param}
+            {param text}Build a more capable web application by taking advantage of the advantages of AJAX throughout your application.<a class="learnMore" href="#/benefits/capabilities-enhancement">Learn more.</a>{/param}
+        {/call}
+        <div class="clear"></div>
+    </div>
+{/template}
+/**
+ * Benefit
+ * @param spriteClass image sprite class
+ * @param alt image alt
+ * @param title Title of benefit
+ * @param text Text of benefit
+ */
+{template .Benefit}
+        <div class="benefit">
+            <div class="benefitImage {$spriteClass}" title="{$alt}"></div>
+            <div class="benefitBody">
+                <h3>{$title}</h3>
+                <p>{$text |noAutoescape}</p>
+            </div>
+        </div>
+{/template}
+
+/**
+ *
+ */
+{template .LorumIpsum}
+Because the UI is written in HTML, CSS, and Javascript, and the service need only respond in JSON or XML, the UI can easily be embedded into any existing web application technology including PHP, Java, .Net, etc.  Likewise, services can be written in any language, or even a combination of languages, and the UI won't know or care about the implementation details
+Our techniques provide a more natural implementation of AJAX that allows for consistent back button and bookmarking within applications, and provide instant notifications to the user via push notifications.
+    <div class="content">
+        <h1>Lorem Ipsum</h1>
+        <h2>What is Lorem Ipsum</h2>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <h2>Where does it come from?</h2>
+
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+    <div class="benefits">
+        <div class="benefit">
+            <img src="/css/NATIVE_online1.png" alt="something" />
+            <h3>It does stuff</h3>
+            <p>It does is really well. You don't believe me? <a href="#!/foo/bar">Look here &gt;</a></p>
+        </div>
+        <div class="benefit">
+            <img src="/css/NATIVE_online1.png" alt="something" />
+            <h3>It does stuff</h3>
+            <p>It does is really well. I really mean it. I do! What are you still looking at me for? Do I look like a clown or something? Is there food in my teeth? Go, just go... <a href="#!/foo/bar">Look here &gt;</a></p>
+        </div>
+        <div class="benefit">
+            <img src="/css/NATIVE_online1.png" alt="something" />
+            <h3>It does stuff</h3>
+            <p>It does is really well. You don't believe me? <a href="#!/foo/bar">Look here &gt;</a></p>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        <h2>What now?</h2>
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        <div class="image">
+            <img src="/css/ee2439cb665727a1f8acd2c21cb13f5b.png" alt="it's a screenshot!" />
+            <div class="caption">This is a caption</div>
+        </div>
+
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+        <h2>Where does it come from?</h2>
+
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    </div>
+{/template}

@@ -1,0 +1,70 @@
+{namespace sofea.view.MainLayout}
+
+/**
+ * Main Page Template
+ */
+{template .Main}
+    <div class="menu">
+        <div class="stripe"></div>
+        <div class="center">
+            <div class="logo">sofea</div>
+            <ul>
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/benefits">Benefits</a></li>
+                <li><a href="#/aboutus">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contentArea">
+        <center>
+            <div class="center panelContainer"></div>
+        </center>
+    </div>
+    <div class="footer">
+        <div class="center">{call .Footer}{/call}</div>
+    </center>
+{/template}
+
+/**
+ * Footer
+ */
+{template .Footer}
+    <ul>
+        <li><a href="http://www.petarstrinic.com">PetarStrinic.com</a></li>
+        <li><a href="http://www.jamonterrell.com">JamonTerrell.com</a></li>
+    </ul>
+    <div class="copyright">
+        &copy;2009-2011 sofea.net. All Rights Reserved.
+    </div>
+{/template}
+
+/**
+ * New Content Area
+ */
+{template .NewContentArea}
+    <div class="panel">
+        <div class="panelContent"></div>
+        <div class="clear"></div>
+    </div>
+{/template}
+
+/**
+ * New Top Content Area
+ */
+{template .NewTopContentArea}
+    <div class="topContentArea"></div>
+{/template}
+
+/**
+ * New MainLeft Content Area
+ */
+{template .NewMainLeftContentArea}
+    <div class="mainLeftContentArea"></div>
+{/template}
+
+/**
+ * New MainLeft Content Area
+ */
+{template .NewChatContentArea}
+    <div class="chatContentArea"></div>
+{/template}

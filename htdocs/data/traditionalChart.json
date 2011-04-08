@@ -1,0 +1,29 @@
+{
+    "id": "node02",
+    "name": "/index.html",
+    "data": {
+      "$area": 8,
+      "$dim": 8,
+      "$color": "#001eff"
+    },
+    "children": [
+        {
+            "id": "node03",
+            "name": "select foo",
+            "data": {
+                "$area": 2,
+                "$dim": 2,
+                "$color": "#1ecc00"
+            }
+        },
+        {
+            "id": "node04",
+            "name": "select bar",
+            "data": {
+                "$area": 6,
+                "$dim": 6,
+                "$color": "#1ecc00"
+            }
+        }
+    ]
+}
