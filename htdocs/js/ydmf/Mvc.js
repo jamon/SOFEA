@@ -44,8 +44,14 @@ require.def(["ydmf/util"], function(util) {
         var controllerName = path[0] !== "" ? path[0] : this.config.defaultController;
         var pathParams = path.length > 1 ? path.slice(1) : [];
 
-        require([this.config.controllerPath + controllerName], function(controllerClass) {
+        this.loadController(controllerName, function(controllerClass) {
             return controllerClass !== "undefined" ? controllerClass.getInstance(pathParams).activate(pathParams) : this.hashChange(this.config.notFoundController);
+        });
+    };
+
+    Mvc.prototype.loadController = function(controllerName, cb) {
+        require([this.config.controllerPath + controllerName], function(controllerClass) {
+            cb(controllerClass);
         });
     };
 
